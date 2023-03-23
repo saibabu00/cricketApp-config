@@ -1,3 +1,15 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Saibabu@143
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/users?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: 'org.hibernate.dialect.MySQL8Dialect
+        show-sql: true
+
 eureka:
   client:
     fetch-registry: true
